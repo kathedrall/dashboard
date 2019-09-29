@@ -47,5 +47,8 @@ class Customer extends Model
         return $this->belongsTo('App\Model\Company', 'id_company', 'id');
     }
     
-    
+    public function clients()
+    {
+        return $this->hasOne('App\Model\Clients', 'id_tbclient', 'id');
+    }
 }
