@@ -63,7 +63,7 @@ $route->group('/user', function () {
 });
 
 $route->group('/invoice', function() {
-    $this->get('/list', 'App\Controllers\InvoiceController@list');
+    $this->get('/', 'App\Controllers\InvoiceController@list');
     $this->get('/print', 'App\Controllers\InvoiceController@print');
 
 });
