@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-primary">
+                        <h4 class="card-title">Edit Profile</h4>
+                        <p class="card-category">Complete your profile</p>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="{{ baseUrl }}/customer/find">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group" style="float: right; margin-bottom: 20px">
+                                        <button type="submit" id="buttonConsultCode"
+                                            class="btn btn-white btn-round btn-just-icon">
+                                            <i class="material-icons">search</i>
+                                            <div class="ripple-container"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input placeholder="Periodo de" type="text" id="datepickerde"
+                                            class="form-control datepicker">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input placeholder="Periodo até" type="text" id="datepickerate"
+                                            class="form-control datepicker">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <select class="browser-default custom-select">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix"></div>
+                        </form>
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead class="">
+                                                <th>
+                                                    DATA
+                                                </th>
+                                                <th>
+                                                    CLIENTE
+                                                </th>
+                                                <th>
+                                                    TOTAL
+                                                </th>
+                                                <th>
+                                                    SITUAÇÃO
+                                                </th>
+                                                <th>
+                                                    Usuários
+                                                </th>
+                                            </thead>
+                                            <tbody>
+
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}

@@ -13,7 +13,7 @@ class InvoiceController extends BaseController
 
     public function list()
     {
-
+        $this->render('invoice.html');
     }
 
     public function print()
