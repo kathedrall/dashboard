@@ -62,6 +62,11 @@ $route->group('/user', function () {
     $this->get('delete/{id}', 'App\Controllers\UserController@delete');
 });
 
+$route->group('/invoice', function() {
+    $this->get('/list', 'App\Controllers\InvoiceController@list');
+    $this->get('/print', 'App\Controllers\InvoiceController@print');
+
+});
 
 
 require BASE_PATH . 'app/database.php';
